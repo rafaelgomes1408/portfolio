@@ -1,0 +1,37 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Home">
+  <section class="flex flex-col items-center text-center gap-4 py-10">
+    <img src="/portfolio/avatar.svg" alt="Avatar" class="w-32 h-32 rounded-full" />
+    <h1 class="text-3xl font-bold">Welcome</h1>
+    <p class="text-lg text-gray-600 dark:text-gray-300">This is a starter portfolio built with Astro.</p>
+  </section>
+  <section class="grid gap-4 sm:grid-cols-2 mb-8">
+    <div class="p-4 border rounded-lg hover:shadow-lg transition-transform hover:-translate-y-1">
+      <h3 class="font-semibold mb-2">Project One</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-300">A highlight of my work.</p>
+    </div>
+    <div class="p-4 border rounded-lg hover:shadow-lg transition-transform hover:-translate-y-1">
+      <h3 class="font-semibold mb-2">Project Two</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-300">Another highlight.</p>
+    </div>
+    <div class="p-4 border rounded-lg hover:shadow-lg transition-transform hover:-translate-y-1">
+      <h3 class="font-semibold mb-2">Project Three</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-300">More info about a project.</p>
+    </div>
+    <div class="p-4 border rounded-lg hover:shadow-lg transition-transform hover:-translate-y-1">
+      <h3 class="font-semibold mb-2">Project Four</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-300">Details about another project.</p>
+    </div>
+  </section>
+  <section>
+    <h2 class="text-2xl font-semibold mb-2">Skills</h2>
+    <ul class="flex flex-wrap gap-2">
+      <li class="px-3 py-1 bg-primary text-white rounded-full text-sm">Astro</li>
+      <li class="px-3 py-1 bg-primary text-white rounded-full text-sm">TailwindCSS</li>
+      <li class="px-3 py-1 bg-primary text-white rounded-full text-sm">Accessibility</li>
+      <li class="px-3 py-1 bg-primary text-white rounded-full text-sm">MDX</li>
+    </ul>
+  </section>
+</Base>

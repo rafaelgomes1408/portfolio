@@ -1,0 +1,20 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Contact">
+  <form class="max-w-md mx-auto flex flex-col gap-4" action="#" method="post">
+    <label class="flex flex-col">
+      <span class="mb-1">Name</span>
+      <input type="text" name="name" required class="border p-2 rounded" />
+    </label>
+    <label class="flex flex-col">
+      <span class="mb-1">Email</span>
+      <input type="email" name="email" required class="border p-2 rounded" />
+    </label>
+    <label class="flex flex-col">
+      <span class="mb-1">Message</span>
+      <textarea name="message" required class="border p-2 rounded"></textarea>
+    </label>
+    <button type="submit" class="self-start bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition-colors">Send</button>
+  </form>
+</Base>
