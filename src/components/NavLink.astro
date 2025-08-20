@@ -1,0 +1,10 @@
+---
+const { href, children } = Astro.props;
+const isActive = Astro.url.pathname === href;
+---
+<a
+  href={href}
+  class={`px-3 py-2 rounded-md transition-colors hover:bg-primary-light/20 ${isActive ? 'text-primary-dark' : ''}`}
+>
+  {children}
+</a>
